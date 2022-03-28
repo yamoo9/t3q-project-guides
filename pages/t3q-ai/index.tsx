@@ -2,15 +2,15 @@ import React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { Logo } from '@/components';
+import { Container } from './styled';
 
-/* T3Q 홈 페이지 컴포넌트 ----------------------------------------------------------- */
+/* T3Q AI 플랫폼 페이지 컴포넌트 ------------------------------------------------------ */
 
-const Home: NextPage = () => {
+const T3QAi: NextPage = () => {
   return (
     <>
       <Head>
-        <title>T3Q ⌁ 인공지능 · 빅데이터 전문 기업</title>
+        <title>T3Q AI 플랫폼 | T3Q ⌁ 인공지능 · 빅데이터 전문 기업</title>
 
         {/* 
           SEO (검색 엔진 최적화) 
@@ -35,11 +35,11 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <h1>T3Q</h1>
-        <Logo />
+        <h1>T3Q AI 플랫폼</h1>
+        <Container>테스트 컨테이너</Container>
       </main>
     </>
   );
 };
 
-export default Home;
+export default T3QAi;

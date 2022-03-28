@@ -1,9 +1,19 @@
-html,
+html {
+  overflow-y: scroll;
+  background: #fff;
+}
+
 body {
-  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans', 'Open Sans', Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+body,
+body *,
+body *::before,
+body *::afoter {
+  box-sizing: border-box;
 }
 
 a {
@@ -11,6 +21,10 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+button {
+  cursor: pointer;
+}
+
+abbr[title] {
+  cursor: help;
 }

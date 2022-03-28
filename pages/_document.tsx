@@ -57,7 +57,9 @@ export default function AppDocument() {
         />
       </Head>
       <body>
+        {/* Header */}
         <Main />
+        {/* Footer */}
         <NextScript />
       </body>
     </Html>
