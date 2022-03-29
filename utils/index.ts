@@ -1,1 +1,1 @@
-export * from './getPackageDir';
+export const temp = () => {};

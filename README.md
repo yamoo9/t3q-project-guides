@@ -13,4 +13,5 @@ T3Q 기존 웹사이트 리뉴얼 프로젝트로 React 프레임워크를 사�
 
 ## 해결할 일
 
-- CSS Prop 적용 문제 : Emotion 11 + Storybook
+- [x] ~~CSS Prop 적용 문제 : Emotion 11 + Storybook~~
+- [ ] [PostCSS 구성](https://nextjs.org/docs/advanced-features/customizing-postcss-config)

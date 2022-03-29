@@ -36,7 +36,7 @@ const Home: NextPage = () => {
 
       <main>
         <h1>T3Q</h1>
-        <Logo />
+        <Logo color="red" />
       </main>
     </>
   );
