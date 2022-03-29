@@ -1,13 +1,18 @@
 import { css } from '@emotion/react';
 import { Container } from './Logo.styled';
 
-export function Logo() {
+export interface LogoProps {
+  background?: string;
+  color?: string;
+}
+
+export function Logo({ background, color }: LogoProps) {
   return (
     <Container>
       <h1
         css={css`
-          background: #333;
-          color: #fff;
+          background: ${background};
+          color: ${color};
         `}
       >
         Logo
@@ -15,3 +20,8 @@ export function Logo() {
     </Container>
   );
 }
+
+Logo.defaultProps = {
+  background: '#fff',
+  color: '#111',
+};
