@@ -80,8 +80,8 @@ function createTheme(mode) {
   return create({
     base: mode,
     brandTitle: 'T3Q',
-    brandUrl: 'http://t3q.com/',
-    // brandImage: '/assets/euid-logo.svg',
+    brandUrl: '/',
+    brandImage: `/static/logo/t3q-${mode}.svg`,
 
     // 타이포그래피
     fontBase: `"Spoqa Han Sans Neo", sans-serif`,

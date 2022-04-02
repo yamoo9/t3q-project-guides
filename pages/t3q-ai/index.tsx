@@ -1,10 +1,16 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
-import { Container } from './styled';
+import Link from 'next/link';
+import { Container, Wrapper } from '@/theme';
 
 /* T3Q AI 플랫폼 페이지 컴포넌트 ------------------------------------------------------ */
+
+/*
+  [안내]
+    문서 제목 및 설명 오픈 그라프 프로토콜 내용은 데레사님께서 정리해주실 것입니다.
+    페이지 별 관련 내용을 받으면 업데이트 해주세요.
+*/
 
 const T3QAi: NextPage = () => {
   return (
@@ -19,7 +25,8 @@ const T3QAi: NextPage = () => {
           [Next.js SEO - robots.txt, sitemap.xml 자동 생성](https://bit.ly/3tKIVPB)
         */}
         <meta name="description" content="페이지 설명 작성" />
-        <meta name="keywords" content="페이지, 핵심, 키워드, 추가" />
+        {/* Google은 웹 순위에 더 이상 keywards 메타 태그를 사용하지 않음 (https://bit.ly/3wJdpnd) */}
+        {/* <meta name="keywords" content="페이지, 핵심, 키워드, 추가" /> */}
 
         {/* 
           오픈 그래프 프로토콜(Open Graph Protocol: https://ogp.me/) 
@@ -34,10 +41,14 @@ const T3QAi: NextPage = () => {
         <meta property="og:article:author" content="저작장 정보 작성" />
       </Head>
 
-      <main>
-        <h1>T3Q AI 플랫폼</h1>
-        <Container>테스트 컨테이너</Container>
-      </main>
+      <Container as="main">
+        <Wrapper>
+          {/* link 테스트 */}
+          <nav>
+            <Link href="/">T3Q 홈 페이지 이동</Link>
+          </nav>
+        </Wrapper>
+      </Container>
     </>
   );
 };
